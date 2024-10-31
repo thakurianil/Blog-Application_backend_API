@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (request, response) => {
-  response.send("BLOG APIs");
+  response.send("BLOG APIs working properly");
 });
 
 app.use("/api/v1/user", userRouter);
