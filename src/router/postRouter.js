@@ -165,12 +165,6 @@ router.get("/search/:query", async (req, res) => {
     title: { $regex: new RegExp(query, "i") },
   });
 
-  // const postData = await searchPost({
-  //   $or: [
-  //     { title: { $regex: new RegExp(query, "i") } },
-  //     { content: { $regex: new RegExp(query, "i") } },
-  //   ],
-  // });
 
   const respObj = {
     status: "success",
